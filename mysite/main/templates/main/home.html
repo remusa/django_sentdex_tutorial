@@ -1,0 +1,20 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+    Homepage
+{% endblock title %}
+
+{% block header %}
+    Blog posts
+{% endblock header %}
+
+{% block content %}
+    {% for tut in tutorials %}
+        <div>
+            <h3>{{tut.tutorial_title}}</h3>
+            <p>{{tut.tutorial_published}}</p>
+            <p>{{tut.tutorial_content|safe}}</p>
+            <br>
+        </div>
+    {% endfor %}
+{% endblock content %}

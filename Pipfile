@@ -4,9 +4,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+black = "*"
 
 [packages]
 django = "*"
+black = "*"
+django-tinymce4-lite = "*"
 
 [requires]
 python_version = "3.7"
